@@ -10,19 +10,26 @@
     if (!window.jQuery) document.write('<script src="js/jquery.js"><\/script>');
   </script>
   <script src="js/md5.js"></script>
-  <script src="js/onReady.js"></script>
+  <script src="js/onReady.min.js"></script>
 </head>
 
 <body>
+  <header id="main_header">
+    <ul>
+      <li class="left"><a href="/index.html"><img src="images/logo.png" height="16" alt=""></a></li>
+      <li><a onclick='$("body,html").css("background", randomColour())'><img alt="Change colour" title="Change colour" src="images/palette.png" width="20" height="20"></a></li>
+      <!--<li>
+        <a href="#">About</a>
+        <p>Hello! Welcome to <i>GETmd5.tk</i>. My name is Robin. I am just a student, and programming is my passion. &hearts; Hopefully, this website might be useful to you. Thanks for visiting. (:</p>
+      </li>-->
+    </ul>
+  </header>
+
   <div id="container">
-    <a href="/index.html"><img class="logo" src="images/logo.png" alt="" width="272" height="68"></a>
+    <a href="index.html"><img class="logo" src="images/logo.png" alt="" width="272" height="68"></a>
     
 	<input type="text" id="string" placeholder="Enter text here, we'll calculate the md5-hash!">
     <input type="text" id="md5" readonly="readonly" value="1bc29b36f623ba82aaf6724fd3b16718">
   </div>
-  
-  <footer id="main_footer">
-    <p>&copy; Robin Schoors (<a href="http://adf.ly/RFmR9">Twitter</a>) | All Rights Reserved - 2013</p>
-  </footer>
 </body>
 </html>
