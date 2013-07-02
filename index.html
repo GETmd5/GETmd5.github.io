@@ -1,35 +1,94 @@
 <!DOCTYPE HTML>
 
 <html>
-<head>
-  <title>GETmd5.tk | Get any MD5-hash in an instant!</title>
-  <link rel="shortcut icon" href="/favicon.ico" >
-  <link rel="stylesheet" href="css/main.css" type="text/css">  
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-  <script>
-    if (!window.jQuery) document.write('<script src="js/jquery.js"><\/script>');
-  </script>
-  <script src="js/md5.js"></script>
-  <script src="js/onReady.min.js"></script>
-</head>
-
-<body>
-  <header id="main_header">
-    <ul>
-      <li class="left"><a href="/index.html"><img src="images/logo.png" height="16" alt=""></a></li>
-      <li><a onclick='$("body,html").css("background", randomColour())'><img alt="Change colour" title="Change colour" src="images/palette.png" width="20" height="20"></a></li>
-      <!--<li>
-        <a href="#">About</a>
-        <p>Hello! Welcome to <i>GETmd5.tk</i>. My name is Robin. I am just a student, and programming is my passion. &hearts; Hopefully, this website might be useful to you. Thanks for visiting. (:</p>
-      </li>-->
-    </ul>
-  </header>
-
-  <div id="container">
-    <a href="index.html"><img class="logo" src="images/logo.png" alt="" width="272" height="68"></a>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      GETmd5.tk | Get any MD5-hash in an instant!
+    </title>
     
-	<input type="text" id="string" placeholder="Enter text here, we'll calculate the md5-hash!">
-    <input type="text" id="md5" readonly="readonly" value="1bc29b36f623ba82aaf6724fd3b16718">
-  </div>
-</body>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-42170939-2', 'getmd5.tk');
+      ga('send', 'pageview');
+    </script>
+    
+    <link href="data:image/x-icon;base64,AAABAAEAEBACAAAAAACwAAAAFgAAACgAAAAQAAAAIAAAAAEAAQAAAAAAQAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAKSkpAAAAAAAAAAAAAAAAADgcAABEIgAAgkEAAIGBAACBgQAAgkEAAEQiAAA4HAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AADH4wAAu90AAH2+AAB+fgAAfn4AAH2+AAC73QAAx+MAAP//AAD//wAA//8AAP//AAD//wAA" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="css/main.min.css" type="text/css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script>
+      if (!window.jQuery) document.write('<script src="js/jquery.js"><\/script>');
+    </script>
+    <script src="js/md5.js">
+    </script>
+    <script src="js/onReady.min.js">
+    </script>
+  </head>
+  
+  <body>
+    <header id="main_header">
+      <ul>
+        <li class="left">
+          <a href="/index.html">
+            <img src="images/logo.png" height="16" alt="">
+          </a>
+        </li>
+        <li>
+          <a onclick='$("body,html").css("background", randomColour())'>
+            <img alt="Change colour" title="Change colour" src="images/palette.png" width="20" height="20">
+          </a>
+        </li>
+        <li>
+          <a onClick="showAside()">
+            <img alt="About me" title="About me" id="aboutMe" src="images/user.png" width="20" height="20">
+          </a>
+        </li>
+      </ul>
+    </header>
+    
+    <aside>
+      <h2>About me</h2>
+      
+      <p class="italic">
+      	Hello! My name is Robin. I'm <span class="age">17</span> years old, living in Belgium. I'm about to go to college and study ICT.
+      </p>
+      
+      <p class="bold">
+      	I love designing websites.
+      </p>
+      
+      <p>
+      	Thank you for visiting. I hope this website will be somewhat useful to you.
+	  	The source code is available on <a href="http://adf.ly/RRIrk" class="bold">Github</a>. (:
+	  </p>
+      
+      <p>
+      	If you'd like to contact me, feel free to e&#8209;mail me at 
+      	<a href="mailto:robin@getmd5.tk" class="bold">robin[at]getmd5[dot]tk</a>
+        or mention me on <a href="http://adf.ly/RFmR9" class="bold">Twitter</a>.
+      </p>
+      
+      <p>
+        Feel free to check out <a href="http://adf.ly/RRKDk" class="bold">YouTube Channel</a>.
+      </p>
+      
+      <p class="italic center inverted">
+      	&copy; 2013 &bullet; All Rights Reserved
+      </p>
+    </aside>
+    
+    <div id="container">
+      <a href="index.html">
+        <img class="logo" src="images/logo.png" alt="" width="272" height="68">
+      </a>
+      
+      <input type="text" id="string" placeholder="Enter text here, we'll calculate the md5-hash!">
+      <input type="text" id="md5" readonly="readonly" value="1bc29b36f623ba82aaf6724fd3b16718">
+    </div>
+  </body>
 </html>
