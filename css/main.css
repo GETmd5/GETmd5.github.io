@@ -101,11 +101,8 @@ aside p {
 {
   width:300px;
   height:100px;
-  position:absolute;
-  left:50%;
-  top:50%;
   text-align:center;
-  margin:-25% 0 0 -150px;
+  margin:150px auto 0 auto;
 }
 
 #container .logo
