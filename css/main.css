@@ -1,5 +1,6 @@
 *
 {
+  text-rendering:optimizeLegibility;
   font-family:'Inconsolata', 'Consolas', monaco, monospace, sans-serif;
   margin:0;
   padding:0;
