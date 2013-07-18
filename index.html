@@ -20,7 +20,10 @@
       *{ font-family:Consolas,monaco,monospace; margin:0; padding:0}html{ height:100%}body{height:auto}a{color:white}#main_header{ position:absolute; left:0; top:0; width:100%; line-height:35px; background:#424242; background:-moz-linear-gradient(top, #424242 0%,#1b1b1b 100%); background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#424242),color-stop(100%,#1b1b1b)); background:-webkit-linear-gradient(top, #424242 0%,#1b1b1b 100%); background:-o-linear-gradient(top, #424242 0%,#1b1b1b 100%); background:-ms-linear-gradient(top, #424242 0%,#1b1b1b 100%); background:linear-gradient(to bottom, #424242 0%,#1b1b1b 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#424242',endColorstr='#1b1b1b',GradientType=0 ); box-shadow:0 0 2px #000; z-index:5}#main_header ul{ list-style:none; padding:0 10px}#main_header ul li{ display:inline-block; margin-left:2.5%; opacity:.8; float:right}#main_header ul li.left{ float:left; margin-left:0}#main_header ul li a{ text-decoration:none}#main_header ul li a img{ vertical-align:middle}#main_header ul li:hover{ opacity:1}aside{width:275px;height:100%;padding:0 5px;right:0;top:0;position:absolute;background-color:#171717;overflow-y:auto;opacity:0.65;box-shadow:0 0 1px #000;display:none}aside p,aside h2{color:white;opacity:0.8;font-size:0.69em}aside h2{margin-top:40px;font-size:1.1em;border-bottom:2px solid #fff}aside p{margin-top:15px;z-index:10}#container{ width:300px; height:100px; text-align:center; margin:150px auto 0 auto}#container .logo{ margin-bottom:25px}#container input{ height:25px; width:300px; text-align:center; border:2.5px solid #fff; border-radius:4px; box-shadow:1px 1px 4px #555; margin-bottom:10px}#main_footer{ position:absolute; bottom:0; left:0; width:100%; background:#fff; text-align:center; box-shadow:0 0 5px #000; opacity:.85; padding:8px 0}#main_footer p{ text-shadow:0 0 2px #000}#main_footer p a{ color:#000}.center{text-align:center}.bold{font-weight:bold}.italic{font-style:italic}.underline{text-decoration:underline}.inverted{background:#fff;color:#000}::selection{color:#000;background:#fff}
     </style>
     
-    <script>
+    <script async src="js/md5.js"></script>
+    <script async src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    
+    <script async>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -28,16 +31,10 @@
 
       ga('create', 'UA-42170939-2', 'getmd5.tk');
       ga('send', 'pageview');
-    </script>
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script>
+      
       if (!window.jQuery) document.write('<script src="js/jquery.js"><\/script>');
-    </script>
-    <script src="js/md5.js">
-    </script>
-    <script>
-    function randomColour(){var e="0123456789ABCD".split("");var t="#";for(var n=0;n<6;n++){t+=e[Math.round(Math.random()*13)]}return t}function showAside(){if($("aside").is(":hidden")){$("aside").fadeIn(500)}else{$("aside").fadeOut(500)}}function doRequest(){var e=$("#string").val();$("#md5").val(md5(e))}function age(e){var t=+(new Date(e));return~~((Date.now()-t)/315576e5)}$(document).ready(function(){$("#string").keyup(function(){setInterval(doRequest(),100)});$("body,html").css("background",randomColour());$(".age").text(age("1995-11-10"))})
+      
+      function randomColour(){var e="0123456789ABCD".split("");var t="#";for(var n=0;n<6;n++){t+=e[Math.round(Math.random()*13)]}return t}function showAside(){if($("aside").is(":hidden")){$("aside").fadeIn(500)}else{$("aside").fadeOut(500)}}function doRequest(){var e=$("#string").val();$("#md5").val(md5(e))}function age(e){var t=+(new Date(e));return~~((Date.now()-t)/315576e5)}$(document).ready(function(){$("#string").keyup(function(){setInterval(doRequest(),100)});$("body,html").css("background",randomColour());$(".age").text(age("1995-11-10"))})
     </script>
   </head>
   
