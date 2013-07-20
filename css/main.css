@@ -158,6 +158,12 @@ aside p {
   color:#000;
 }
 
+#social {
+	position:absolute;
+	bottom:20px;
+	left:20px;
+}
+
 .center {
 	text-align:center;
 }
