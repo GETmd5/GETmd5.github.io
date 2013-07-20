@@ -19,6 +19,10 @@ a {
 	color:white;
 }
 
+a img {
+	border:none;
+}
+
 #main_header
 {
   position:absolute;
@@ -128,6 +132,7 @@ aside p {
   box-shadow:1px 1px 4px #555;
   margin-bottom:10px;
   font-size:.75em;
+  outline:none;
 }
 
 #main_footer
